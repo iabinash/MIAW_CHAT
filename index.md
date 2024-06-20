@@ -1,14 +1,11 @@
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script
-        
     <title>MIAW POC</title>
+  
   </head>
   <body>
     <div class="container-fluid">
@@ -30,199 +27,38 @@
                 </ul>
             </div>
         </div>
-      </div>
-    <div width="100%" height="150px !important" style="background: linear-gradient(180deg, #006BBD 0%, #64AAE6 100%); overflow: hidden;" id="divBanner" role="main" aria-label="pageTitle">
-        <div class="breadcrumb-div-ht pt-4">
-            <h1 class="header-text" style="height:150px; color: #FFFFFF; text-align: center; padding-top: 40px; font-weight: normal !important;">Contact Technical Support</h1>
-        </div>
     </div>
-    <div class="container border Mt2Mb3">
-        <div class="container">
-            <div class="row">
-                <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11">
-                    <div class="mr-md-3 header-ti" style="margin-top: 12px;">
-                        <div class="d-flex justify-content-md-start">
-                            <svg class="dti dti-xxl" height="32" width="32" viewBox="0 0 32 32">
-                                <path xmlns="http://www.w3.org/2000/svg" d="M28.237 20.861v-14.682h-24.474v14.682h-1.956l0.73 4.96h26.921l0.734-4.96h-1.956zM5.645 8.061h20.71v12.8h-20.71v-12.8zM27.834 23.937h-23.672l-0.175-1.195h24.026l-0.179 1.195z"></path>
-                            </svg>
-                            <h2 class="h5 mb-1 ml-4 mt-1">Technical Issues</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                    <div class="ml-0 ml-md-auto flex-shrink-0 text-center">
-                        <div class="mt-2">
-                            <button role="link" tabindex="0" aria-label="Close - go to Contact Support homepage" class="btn p-0 close svgiconmargin-top btn_Close" data-dismiss="alert" type="button" data-metrics="{&quot;btnname&quot;:&quot;techissueclose&quot;,&quot;appcode&quot;:&quot;222.830.810.451&quot;}">
-                                <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
-                                    <path d="M21.668 8.9299L16.01 14.5859L10.354 8.9299L8.94002 10.3439L14.596 15.9999L8.94002 21.6579L10.354 23.0719L16.01 17.4159L21.668 23.0719L23.082 21.6579L17.424 15.9999L23.082 10.3439L21.668 8.9299Z" fill="#006BBD"></path>
-                                    <path d="M16 0.993896C7.71202 0.993896 0.994019 7.7119 0.994019 15.9999C0.994019 24.2879 7.71202 31.0059 16 31.0059C24.288 31.0059 31.006 24.2879 31.006 15.9999C31.006 7.7119 24.288 0.993896 16 0.993896ZM16 29.0059C8.82802 29.0059 2.99402 23.1719 2.99402 15.9999C2.99402 8.8279 8.82802 2.9939 16 2.9939C23.172 2.9939 29.006 8.8279 29.006 15.9999C29.006 23.1719 23.172 29.0059 16 29.0059Z" fill="#006BBD"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <hr class="h-hr mt-4" aria-hidden="true">
 
-            </div>
-            <div class="row">
-                <div>
-                    <div class="row pb-align" style="margin-left: 25px; margin-right: 45px; margin-top: 30px; padding-bottom: 16px;">
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 column" id="deviceProgressbarStep1">
-                            <div class="progress right-radius device-progressbar">
-                                <div class="progress-bar-contactus" id="deviceProgressbar" role="progressbar" aria-label="Identify your device,step 1 of 3" aria-valuenow="0" aria-valuetext="Identify your device,step 1 of 3, 0% completed" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="mt-4">
-                                <span class="wizadview xs-hide md-none" id="stepOneDesc" aria-current="step">Identify your device</span>
-                            </div>
-                        </div>
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 column" id="deviceProgressbarStep2">
-                            <div class="progress " style="border-radius:0rem !important">
-                                <div class="progress-bar-contactus" id="deviceProgressbar_issuetype" role="progressbar" aria-label="Describe your issue,step 2 of 3" aria-valuenow="0" aria-valuetext="Describe your issue,step 2 of 3, 0% completed" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="mt-4">
-                                <span class="wizadhide xs-hide md-none" id="stepTwoDesc" aria-current="step">Describe your issue</span>
-                            </div>
-                        </div>
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 column" id="deviceProgressbarStep3">
-                            <div class="progress  left-radius">
-                                <div class="progress-bar-contactus" id="deviceProgressbar_supportoptions" role="progressbar" aria-label="See your support options,step 3 of 3" aria-valuenow="0" aria-valuetext="See your support options,step 3 of 3, 0% completed" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="mt-4">
-                                <span class="wizadhide xs-hide md-none xs-hide" id="stepThreeDesc" aria-current="step">See your support options</span>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-                <div class="row">
-                    <h3 class="h3 text-center mt-4">Identify your device</h3>
-                </div>
-                <div class="row ad-width mb-2 mt-4">
-                    <div class="col-sm device-lg-column" id="divDetectPC">
-                        <div class="card-design h-100 pointcursor" id="contactusDetectPC" data-metrics="{&quot;btnname&quot;:&quot;detectprod&quot;,&quot;appcode&quot;:&quot;222.830.810.457&quot;}">
-                            <span aria-hidden="true">
-                                <svg class="mr-4 card-img-top d-flex justify-content-center w-100 cardtop" width="32" height="29" viewBox="0 0 32 29" fill="none" alt="Detect my device automatically">
-                                    <path d="M13.76 23.16H2.14V8.50005H25.68V10C26.4644 10.4782 27.178 11.0639 27.8 11.74V0.300049H0V25.2801H16C15.1377 24.7066 14.38 23.9895 13.76 23.16ZM2.14 2.50005H25.68V6.50005H2.14V2.50005Z" fill="#3176C8"></path>
-                                    <path d="M27.8 23L26.7 21.9C27.217 21.1926 27.5907 20.3909 27.8 19.5401C27.9376 18.9772 28.0048 18.3995 28 17.82C27.9832 16.838 27.7651 15.8698 27.3592 14.9753C26.9533 14.0809 26.3681 13.2793 25.64 12.62C24.957 11.9699 24.1487 11.4657 23.2645 11.1383C22.3802 10.8108 21.4384 10.6671 20.4967 10.7157C19.555 10.7644 18.6331 11.0044 17.7872 11.4212C16.9414 11.838 16.1894 12.4228 15.577 13.1399C14.9647 13.857 14.5049 14.6913 14.2258 15.592C13.9467 16.4927 13.854 17.4409 13.9535 18.3786C14.0529 19.3163 14.3425 20.2239 14.8044 21.046C15.2663 21.868 15.8909 22.5874 16.64 23.16C17.8217 24.1618 19.3093 24.7313 20.8579 24.7749C22.4065 24.8186 23.9237 24.3337 25.16 23.4L30.46 28.7001L31.96 27.18L27.76 23H27.8ZM25.68 19.26C25.3356 20.3651 24.6067 21.3101 23.6253 21.9238C22.6439 22.5374 21.4751 22.7791 20.3309 22.6049C19.1866 22.4308 18.1427 21.8523 17.3883 20.9745C16.634 20.0966 16.2192 18.9775 16.2192 17.82C16.2192 16.6626 16.634 15.5435 17.3883 14.6656C18.1427 13.7878 19.1866 13.2093 20.3309 13.0352C21.4751 12.861 22.6439 13.1027 23.6253 13.7163C24.6067 14.33 25.3356 15.275 25.68 16.38C26 17.3134 26 18.3267 25.68 19.26Z" fill="#3176C8"></path>
-                                </svg>
-                            </span>
-                            <span>
-                                <button id="show-1" class="text-center cardtext" type="button" style="border: none; background: none;" id="btnDetectPC" aria-label="Detect my device automatically" tabindex="0">Detect my device automatically</button>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-sm device-lg-column">
-                        <div class="card-design h-100 pointcursor" id="browseallprod" data-metrics="{&quot;btnname&quot;:&quot;choosemymodel&quot;,&quot;appcode&quot;:&quot;222.830.810.133&quot;}" data-backdrop="static" data-toggle="modal" data-target="#chooseMyModal">
-                            <span aria-hidden="true">
-                                <svg class="mr-4 card-img-top d-flex justify-content-center w-100 cardtop" width="32" height="29" viewBox="0 0 30 25" fill="none" alt="Choose my model">
-                                    <path d="M26.9577 14.738V0.238037H3.04171V14.738L0.02771 19.506V24.762H29.9717V19.506L26.9577 14.738ZM24.9577 2.24004V13.792H5.04171V2.24004H24.9577ZM4.74171 15.79H25.2557L27.1677 18.814H2.82971L4.74171 15.79ZM2.02771 20.816H11.2497V22.764H2.02771V20.816ZM18.8397 22.762V20.816H27.9697V22.764H18.8397V22.762Z" fill="#006BBD"></path>
-                                </svg>
-                            </span>
-                            <span>
-                                <button class="text-center cardtext" id="btnChooseProduct" type="button" style="border: none; background: none;" aria-label="Choose my model" tabindex="0">Choose my model</button>
-                            </span>
-                        </div>
-                    </div>
-                <div class="col-sm device-lg-column">
-                    <div class="card-design h-100 pointcursor" id="contactusServiceTag" data-metrics="">
-                        <span aria-hidden="true">
-                            <svg class="mr-4 card-img-top d-flex justify-content-center w-100 cardtop" width="33" height="29" viewBox="0 0 30 31" fill="none" alt="Enter Service Tag/Product ID">
-                                <path d="M14.5998 0.5H4.19976L-0.000244141 4.69995V15.1L15.3998 30.5L29.9998 15.8999L14.5998 0.5ZM1.99976 14.2999V5.5L4.99976 2.5H13.7998L27.1998 15.8999L15.1998 27.7L1.99976 14.2999Z" fill="#006BBD"></path>
-                                <path d="M4.79976 5.50005C4.19976 6.10005 4.19976 7.1 4.79976 7.7C5.39976 8.3 6.39976 8.3 6.99976 7.7C7.59976 7.1 7.59976 6.10005 6.99976 5.50005C6.39976 4.90005 5.39976 4.90005 4.79976 5.50005Z" fill="#006BBD"></path>
-                            </svg>
-                        </span>
+
     
-                        <div class="cardtext">
-                            <span>
-                                <button class="d-inline-block pr-4 text-center mb-0 " id="btnServiceTagEnter" type="button" style="border: none; background: none;" aria-label="Enter Service Tag/Product ID" tabindex="0">
-                                    Enter Service Tag/Product ID
-                                </button>
-                            </span>
-                            <span>
-                                <a aria-label="tooltip" role="tooltip" tabindex="0" data-metrics="{&quot;btnname&quot;:&quot;info&quot;,&quot;appcode&quot;:&quot;222.830.810.449&quot;}" class="btn p-0 showmeProdIdentifier" data-backdrop="static" data-toggle="modal" data-target="#prodidentifierpopup-1">
-                                    <span>
-                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" class="prodidentifiersvg" alt="tooltip" aria-label="title">
-                                            <title id="title">How to find your product identifier</title>
-                                            <path d="M8.00015 0.000732422C3.85845 0.000732422 0.500854 3.35823 0.500854 7.49993C0.500854 11.6416 3.85835 14.9991 8.00015 14.9991C12.1419 14.9991 15.4994 11.6416 15.4994 7.49993C15.4994 3.35823 12.1419 0.000732422 8.00015 0.000732422ZM8.00015 13.9991C4.41645 13.9991 1.50085 11.0836 1.50085 7.49993C1.50085 3.91623 4.41655 1.00073 8.00015 1.00073C11.5838 1.00073 14.4994 3.91623 14.4994 7.49993C14.4994 11.0836 11.5839 13.9991 8.00015 13.9991Z" fill="#006BBD"></path>
-                                            <path d="M9.91105 3.63003C9.67915 3.43813 9.40125 3.29023 9.07705 3.18623C8.75325 3.08223 8.39495 3.02993 8.00325 3.02993C7.55505 3.02993 7.16485 3.09393 6.83335 3.22183C6.50135 3.35023 6.22745 3.52993 6.01115 3.76193C5.79525 3.99433 5.63315 4.27213 5.52525 4.59583C5.41735 4.92013 5.33275 5.39163 5.36315 5.79023H6.56505C6.53855 5.30623 6.66685 4.81023 6.87535 4.52993C7.08335 4.25013 7.45885 4.11003 8.00325 4.11003C8.27525 4.11003 8.50325 4.14423 8.68735 4.21213C8.87095 4.28003 9.01885 4.36983 9.13115 4.48213C9.24305 4.59393 9.32315 4.72183 9.37095 4.86593C9.41935 5.00993 9.44325 5.15793 9.44325 5.30973C9.44325 5.52603 9.41295 5.71203 9.35345 5.86783C9.29335 6.02413 9.21135 6.16813 9.10735 6.29993C9.00335 6.43173 8.87735 6.56213 8.72945 6.69003C8.58095 6.81803 8.41935 6.95863 8.24305 7.11003C8.05895 7.26243 7.90716 7.40793 7.78695 7.54853C7.66736 7.68813 7.56925 7.83663 7.49305 7.99183C7.41685 8.14813 7.36315 8.32003 7.33145 8.50843C7.29915 8.69593 7.28465 9.02993 7.28465 9.27023H8.48135C8.48135 9.09443 8.49885 8.82003 8.53105 8.68823C8.56285 8.55633 8.61705 8.43423 8.69325 8.32193C8.76895 8.21063 8.86705 8.09833 8.98715 7.98603C9.10725 7.87473 9.25915 7.74193 9.44325 7.59053C9.61905 7.43823 9.78115 7.29073 9.92905 7.14623C10.077 7.00263 10.203 6.84443 10.307 6.67263C10.411 6.50023 10.493 6.30593 10.5531 6.09013C10.6132 5.87433 10.6434 5.61403 10.6434 5.30983C10.6434 4.94993 10.5789 4.62823 10.451 4.34403C10.3232 4.06023 10.143 3.82193 9.91105 3.63003Z" fill="#006BBD"></path>
-                                            <path d="M8.48305 10.7702H7.28335V11.9699H8.48305V10.7702Z" fill="#006BBD"></path>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="row" id="step-1" style="display: none;">
-                    <h3 class="h3 text-center mt-4">Identify your device</h3>
-                    <p class="text-center">Enter a Service Tag, Product ID, or Agrement ID</p>
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="margin-left: 35%; padding-right: 0px;">
-                        <input id="myInput" type="text" class="form-control" id="agrementtext">    
-                    </div>
-                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ml-0" >
-                        <button id="show-2" type="submit" class="btn btn-primary mb-3">submit</button>
-                    </div>
-                </div>
-                <div class="row" id="step-2" style="display: none;">
-                    <h3 class="h3 text-center mt-4">This is the device you selected </h3>
-                    <p class="text-center">Latitude 5520</p>
-                    <p class="text-center">Service Tag: <span id="resultContainer"></span></p>
-                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ml-0" style="margin-left: 47%; padding-right: 0px;" >
-                        <button id="show-3" type="submit" class="btn btn-primary mb-3">Submit</button>
-                    </div>
-                </div>
-                <div class="row" id="step-3">
-                    <h3 class="h3 text-center mt-4">Select an issue</h3>
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="margin-left: 35%; padding-right: 0px;">
-                        <select  class="form-select" aria-label="Default select example">
-                            <option selected>Select an issue</option>
-                            <option value="1">Startup & Power</option>
-                            <option value="2">Hard Drive & RAID Controllers </option>
-                            <option value="3">iDRAC, CMC, LifeCycle Controller</option>
-                            <option value="4">Operating system</option>
-                            <option value="5">Processor & Memory</option>
-                            <option value="7">Storage</option>
-                            <option value="8">Networking</option>
-                            <option value="9">Software</option>
-                            <option value="10">Status Updates</option>
-                        </select>
-                    </div>
+    
+    <iframe style="background-color: red;">
+        <script type='text/javascript'>
+            function initEmbeddedMessaging() {
+                           try {
+                           embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+    
+                                          embeddedservice_bootstrap.init(
+                                                         '00D8B0000004cZ5',
+                                                         'MIAWPOC',
+                                                         'https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897',
+                                                         {
+                                                                        scrt2URL: 'https://dellservices--ge4.sandbox.my.salesforce-scrt.com'
+                                                         }
+                                          );
+                           } catch (err) {
+                                          console.error('Error loading Embedded Messaging: ', err);
+                           }
+            };
+    </script>
+    <script type='text/javascript' src='https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    
+    
 
-                    <hr class="h-hr mt-4" aria-hidden="true">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ml-0 text-center" >
-                        <button id="showChat" type="submit" class="btn btn-primary mb-3" onclick='initEmbeddedMessaging()'>Start Chat</button>
-                    </div>
-                   
-                </div>
 
-        </div>
-  
-<iframe style="background-color: red;">
-  <script type='text/javascript'>
-               function initEmbeddedMessaging() {
-                              try {
-                              embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+    </iframe>
 
-                                             embeddedservice_bootstrap.init(
-                                                            '00D8B0000004cZ5',
-                                                            'MIAWPOC',
-                                                            'https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897',
-                                                            {
-                                                                           scrt2URL: 'https://dellservices--ge4.sandbox.my.salesforce-scrt.com'
-                                                            }
-                                             );
-                              } catch (err) {
-                                             console.error('Error loading Embedded Messaging: ', err);
-                              }
-               };
-</script>
-<script type='text/javascript' src='https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'>
-  
-</script>
-</iframe>
-
+   
     
   </body>
 </html>
