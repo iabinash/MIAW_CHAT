@@ -1,6 +1,7 @@
 <html>
   <body>
-     <script type='text/javascript'>
+    <iframe>
+       <script type='text/javascript'>
             function initEmbeddedMessaging() {
                            try {
                            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -19,6 +20,8 @@
             };
     </script>
     <script type='text/javascript' src='https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    </iframe>
+    
     
   </body>
 </html>
