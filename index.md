@@ -7,114 +7,6 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script
-
-<style>
-  .border {
-    border: 1px solid #bbb !important;
-}
-.Mt2Mb3{
-    margin-top: 20px; 
-    margin-bottom: 35px;
-    padding: 20px 10px;
-}
-.right-radius{
-    border-radius: 10px 0px 0px 10px;
-}
-.left-radius{
-    border-radius: 0px 10px 10px 0px;
-}
-.device-progressbar{
-    background-color: #41b6e6;
-}
-.card-design {
-    position: relative;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .125rem;
-    text-align: center;
-}
-.cardtop {
-    margin-top: 47.5px;
-}
-.cardtext {
-    margin-top: 16px;
-    margin-bottom: 47.5px;
-    margin-left: 35px;
-    margin-right: 35px;
-    font-size: 16px;
-   
-    letter-spacing: .012em;
-    color: #444;
-}
-.ad-width {
-    margin-left: 25px;
-    margin-right: 25px;
-}
-#step-1, #step-2,{
-    display: none;
-}
-  #step-3{
-    display: flex;
-  }
- 
-#chatPopUp{
-    background: #fff;
-    width: 240px;
-    height: 350px;
-    position: absolute;
-    right: 0px;
-    top: 689px;
-    filter: drop-shadow(5px 5px 5px #000000);
-    display: none;
-}
-#chatHeader{
-    width: 100%;
-    height: 30px;
-    background: #000000;
-    float: left;
-    color: #fff;
-    padding: 2px 4px;
-}
-#close{
-    background: transparent;
-    color: #fff;
-    border: none;
-    float: right;
-}
-.UMH .mh-top .left-column .mh-logo {
-    padding: 0;
-}
-.delltechLogoWrapper svg {
-    height: 23px;
-    padding: 0;
-    width: 182px;
-    fill: #0076ce;
-}
-.mh-flyout-link {
-    height: 56px;
-
-}
-.mh-label{
-    font-size: 14px;
-    color: #636363;
-    text-transform: none;
-}
-
-a{
-    text-decoration: none !important;
-}
-.nav-link{
-    color: #000000 !important;
-    float: right;
-    margin-top: 16px;
-}
-
-</style>
-
         
     <title>MIAW POC</title>
   </head>
@@ -263,7 +155,7 @@ a{
                     </div>
                 </div>
                 </div>
-                <div class="row" id="step-1">
+                <div class="row" id="step-1" style="display: none;">
                     <h3 class="h3 text-center mt-4">Identify your device</h3>
                     <p class="text-center">Enter a Service Tag, Product ID, or Agrement ID</p>
                     <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" style="margin-left: 35%; padding-right: 0px;">
@@ -273,7 +165,7 @@ a{
                         <button id="show-2" type="submit" class="btn btn-primary mb-3">submit</button>
                     </div>
                 </div>
-                <div class="row" id="step-2">
+                <div class="row" id="step-2" style="display: none;">
                     <h3 class="h3 text-center mt-4">This is the device you selected </h3>
                     <p class="text-center">Latitude 5520</p>
                     <p class="text-center">Service Tag: <span id="resultContainer"></span></p>
@@ -307,8 +199,8 @@ a{
 
         </div>
   
-
-<script type='text/javascript'>
+<iframe style="background-color: red;">
+  <script type='text/javascript'>
                function initEmbeddedMessaging() {
                               try {
                               embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -329,6 +221,8 @@ a{
 <script type='text/javascript' src='https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'>
   
 </script>
+</iframe>
+
     
   </body>
 </html>
