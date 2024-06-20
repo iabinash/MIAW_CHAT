@@ -11,6 +11,7 @@
     <script>
         $(document).ready(function(){
           $("#show-1").click(function(){
+          alert('1');
             $("#step-1").css('display', 'flex');
             $("#step-2").css('display', 'none');
             $("#step-3").css('display', 'none');
