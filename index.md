@@ -85,9 +85,10 @@
     margin-left: 25px;
     margin-right: 25px;
 }
-#step-1, #step-2, #step-3{
+#step-1, #step-2,{
     display: none;
 }
+ 
 
 #chatPopUp{
     background: #fff;
