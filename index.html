@@ -1,28 +1,55 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIAW World</title>
+  </head>
   <body>
-    <iframe allow="geolocation *; microphone *; camera *" frameborder="no" height="1000px" id="0661b0000004nmw" marginheight="0" marginwidth="0" name="0661b0000004nmw" scrolling="yes" title="HelloWorld" width="100%">
-     <script type='text/javascript'>
-               function initEmbeddedMessaging() {
-                              try {
-                              embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
-                                             embeddedservice_bootstrap.init(
-                                                            '00D8B0000004cZ5',
-                                                            'MIAWPOC',
-                                                            'https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897',
-                                                            {
-                                                                           scrt2URL: 'https://dellservices--ge4.sandbox.my.salesforce-scrt.com'
-                                                            }
-                                             );
-                              } catch (err) {
-                                             console.error('Error loading Embedded Messaging: ', err);
-                              }
-               };
-    </script>
-    <script type='text/javascript' src='https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
+    <iframe 
+      allow="geolocation *; microphone *; camera *" 
+      frameborder="0" 
+      height="1000px" 
+      id="0661b0000004nmw" 
+      marginheight="0" 
+      marginwidth="0" 
+      name="0661b0000004nmw" 
+      scrolling="yes" 
+      title="HelloWorld" 
+      width="100%"
+      onload="console.log('Iframe loaded successfully')"
+      onerror="console.error('Error loading iframe'); alert('Error loading iframe');">
     </iframe>
-    
+
+    <script type="text/javascript">
+      function initEmbeddedMessaging() {
+        try {
+          if (typeof embeddedservice_bootstrap === 'undefined') {
+            throw new Error('embeddedservice_bootstrap is not defined');
+          }
+          
+          embeddedservice_bootstrap.settings.language = 'en_US'; // Set language
+
+          embeddedservice_bootstrap.init(
+            '00D8B0000004cZ5', // Org ID
+            'MIAWPOC', // Deployment ID
+            'https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897', // URL
+            {
+              scrt2URL: 'https://dellservices--ge4.sandbox.my.salesforce-scrt.com' // Additional settings
+            }
+          );
+          console.log('Embedded Messaging initialized successfully');
+        } catch (err) {
+          console.error('Error loading Embedded Messaging:', err);
+          alert('There was an error loading Embedded Messaging. Check the console for details.');
+        }
+      }
+    </script>
+    <script 
+      type="text/javascript" 
+      src="https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897/assets/js/bootstrap.min.js" 
+      onload="initEmbeddedMessaging()"
+      onerror="console.error('Failed to load the bootstrap.min.js script'); alert('Failed to load bootstrap.min.js');">
+    </script>
   </body>
 </html>
