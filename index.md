@@ -1,5 +1,5 @@
 <html>
-  <body onload="'initEmbeddedMessaging()">
+  <body onload="initEmbeddedMessaging()">
        <script type='text/javascript'>
             function initEmbeddedMessaging() {
                            try {
