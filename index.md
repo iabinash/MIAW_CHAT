@@ -1,5 +1,5 @@
 <html>
-  <body>
+  <body onload="'initEmbeddedMessaging()">
        <script type='text/javascript'>
             function initEmbeddedMessaging() {
                            try {
@@ -18,6 +18,5 @@
                            }
             };
     </script>
-    <script type='text/javascript' src='https://dellservices--ge4.sandbox.my.site.com/ESWMIAWPOC1715760511897/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
   </body>
 </html>
